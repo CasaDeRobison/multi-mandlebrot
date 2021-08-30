@@ -11,10 +11,11 @@
 140 x = 0
 150 y = 0
 160 for i=0 to 14
-170 if x*x+y*y > 4 then goto 215
-180 xt = x*x - y*y + xz
-190 y = 2*x*y + yz
-200 x = xt
+161 x2 = x*x:y2 = y*y
+170 if x2+y2 > 4 then goto 215
+171 xy = x*y
+180 y = xy + xy + yz
+190 x = x2 - y2 + xz
 210 next i
 215 i = i-1
 220 poke 1024+py*40+px,160
