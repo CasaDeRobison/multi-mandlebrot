@@ -1,8 +1,8 @@
 10 print chr$(147):ti$="000000"
 100 for py=0 to 21
-110 for px=0 to 31
-120 xz = px*3.5/32-2.5
-130 yz = py*2/22-1
+110 yz = py*2/22-1
+120 for px=0 to 31
+130 xz = px*3.5/32-2.5
 140 x = 0
 150 y = 0
 160 for i=0 to 14
