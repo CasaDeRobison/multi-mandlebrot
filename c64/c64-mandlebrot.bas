@@ -1,4 +1,4 @@
-10 print chr$(147)
+10 print chr$(147):ti$="000000"
 100 for py=0 to 21
 110 for px=0 to 31
 120 xz = px*3.5/32-2.5
@@ -16,6 +16,7 @@
 230 poke 55296+py*40+px,i
 240 next px
 260 next py
-270 for i=0 to 9
-280 print chr$(17)
+270 for i=0 to 20
+280 print chr$(17);
 290 next i
+300 print ti/60;
