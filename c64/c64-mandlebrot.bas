@@ -1,8 +1,13 @@
 10 print chr$(147):ti$="000000"
+20 dim ya(31), xa(31)
+30 for i=0 to 31
+40 ya(i)=i*2/22-1
+50 xa(i)=i*3.5/32-2.5
+60 next i
 100 for py=0 to 21
-110 yz = py*2/22-1
+110 yz = ya(py)
 120 for px=0 to 31
-130 xz = px*3.5/32-2.5
+130 xz = xa(px)
 140 x = 0
 150 y = 0
 160 for i=0 to 14
